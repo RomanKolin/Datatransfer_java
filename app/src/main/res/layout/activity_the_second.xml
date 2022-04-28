@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheToActivity">
+
+    <TextView
+        android:id="@+id/textViewcreator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creator"
+        android:textColor="@color/maroon"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/textView1from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/timesnewromanitalic"
+        android:textColor="@color/darkgrey"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewcreator">
+
+        <Switch
+            android:id="@+id/switch1checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/timesnewromanitalic"
+            android:text="@string/checkbox1"
+            android:textSize="14sp"
+            android:thumbTint="@color/maroon"
+            android:trackTint="@color/maroon"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch2checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/timesnewromanitalic"
+            android:text="@string/checkbox2"
+            android:textSize="14sp"
+            android:thumbTint="@color/maroon"
+            android:trackTint="@color/maroon"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/maroon"
+        android:textCursorDrawable="@drawable/cursor"
+        android:fontFamily="@font/timesnewromanitalic"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1from"
+        android:autofillHints=""
+        tools:ignore="LabelFor,TextFields" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText1to"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/transferbuttonnewwindow"
+            android:fontFamily="@font/timesnewromanitalic"
+            android:onClick="onclickok"
+            android:text="@string/ok"
+            android:textSize="20sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/button2cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/exitbutton"
+            android:fontFamily="@font/timesnewromanitalic"
+            android:onClick="onclickcancel"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

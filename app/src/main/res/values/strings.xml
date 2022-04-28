@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Data transfer</string>
+    <string name="creator">KOLINKO</string>
+    <string name="transfernewwindow">Transfer (new window)</string>
+    <string name="transferdialog">Transfer (dialog)</string>
+    <string name="exit">Exit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="switch1">Switch №1</string>
+    <string name="switch2">Switch №2</string>
+    <string name="checkbox1">CheckBox №1</string>
+    <string name="checkbox2">CheckBox №2</string>
+</resources>
